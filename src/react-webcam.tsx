@@ -25,7 +25,9 @@ import * as React from "react";
 
       // Some browsers just don't implement it - return a rejected promise with an error
       // to keep a consistent interface
+      alert('forked package from @avi92')
       if (!getUserMedia) {
+        alert('forked package from @avi9!!  getUserMedia is not implemented in this browser')
         return Promise.reject(
           new Error("getUserMedia is not implemented in this browser")
         );
